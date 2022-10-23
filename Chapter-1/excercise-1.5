@@ -1,0 +1,8 @@
+The applicative order will not give any results as first the (p) procedure is
+evaluated which is recursive without any ending contidion leading to infinite recursion.
+
+In the normal-order evaluation, the (p) is not evaluated. It will only get evaluated on demand
+since (if (= 0 0) 0 (p))  evaluates to 0, there is no need to evaluate (p). The answer is 0 here.
+
+
+
